@@ -13,7 +13,7 @@ public class HelloWorld {
 
     public static void main(String[] args) {
         // 3.调用本地函数jav
-        String text = sayHello("测试");
+        String text = sayHello("tony");
         System.out.println(text);
     }
 

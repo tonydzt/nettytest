@@ -1,0 +1,21 @@
+package spi;
+
+import org.apache.dubbo.common.URL;
+import org.apache.dubbo.common.extension.Activate;
+
+/**
+ * @author douzhitong
+ * @date 2021/4/27
+ */
+@Activate(group = "consumer", value = "log")
+public class TonyLog implements Log {
+    @Override
+    public void info() {
+        System.out.println("Hello tony!");
+    }
+
+    @Override
+    public void adaptiveInfo(URL url) {
+        System.out.println("Hello adaptive tony!");
+    }
+}
